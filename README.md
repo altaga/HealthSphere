@@ -56,11 +56,9 @@ Software:
 
 ## Connection Diagram:
 
-This is the connection diagram of the system:
-<img src="https://i.ibb.co/QDNmyHh/Arduino5v-bb.png" width="800">
-
-If you have a Arduino Mini pro 3.3v version you dont need the resistors:
-<img src="https://i.ibb.co/q57Pcx1/Arduino3-3-bbb.png" width="800">
+This is the connection diagram of the system, but if you have a Arduino Mini pro 3.3v version you dont need the resistors:
+<img src="https://i.ibb.co/QDNmyHh/Arduino5v-bb.png" width="400">
+<img src="https://i.ibb.co/q57Pcx1/Arduino3-3-bbb.png" width="400">
 
 Services Connection Diagram:
 
