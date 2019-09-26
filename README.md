@@ -21,48 +21,48 @@ Always use technology to improve the world, if you are a black hat or gray hat h
 
 ## Introduction:
 
-Rehabilitation system based on SmartEdge Agile
+His heart beats 115200 times a day, it is such a fine machinery that does not stop during our lives, however, not many people have the advantage to have this machinery in good condition, many factors of daily life can permanently affect cardiac function .
 
-There are people in the world that suffer serious impediments in their arms. These are from several illnesses such as stroke, Guillain-Barré syndrome, paralysis from birth, cerebral palsy, spina bifida, spinal muscular atrophy and several others.
-These patients have to continuously take rehabilitation therapies, which are expensive:
+Factors such as:
 
-The prices of these sessions cost from $ 650 to $ 1300 dollars and sometimes are not insurable:
-https://www.healthline.com/health/cool-sculpting-cost
+- Sedentary.
+- Do not eat a balanced diet.
+- Drink alcoholic drinks along with energy drinks.
+- A long ETC ...
 
-They take a lot of time and it is also necessary to go to specific clinics to receive them, which increases the pain and discomfort of the patient due to the physical effort.
+Too many people must undergo cardiac tests frequently in expensive hospitals with gigantic measuring devices.
 
-The clinical devices that perform the rehabilitation are enormous and can not be transported or mobilized easily:
-https://www.hocoma.com/solutions/armeo-power/
-https://www.researchgate.net/figure/Examples-of-robotic-devices-for-motor-training-A-End-effector-type-InMotion-20_fig1_259609214
-
-Therefore we must create a device capable of helping the patient in his rehabilitation, give him continuous feedback of his therapy and it has to be economical (to a certain degree and in comparison to the other choices).
+That's why I decided through AzureSphere's amazing technology to create a real-time heart rate monitoring system and perform a dashboard deployment.
 
 ## Materials:
 
 Hardware:
-- SmartEdge Agile                                  x1.
-https://www.avnet.com/wps/portal/us/solutions/iot/building-blocks/smartedge-agile/
-- Robotic Arm                                      x1.
-https://www.amazon.com/OWI-Robotic-Soldering-Required-Extensive/dp/B0017OFRCY
-- ESP32                                            x2.
-https://www.adafruit.com/product/3405
+- AzureSphere                                      x1.
+https://www.newark.com/avnet/aes-ms-mt3620-sk-g/ms-sphere-iot-starter-kit/dp/02AH9206
+- Arduino Mini Pro                                 x1.
+https://www.amazon.com/Arduino-Pro-Mini-328-16MHz/dp/B004G53J5I
+- 1k Resistors                                     x3.
+https://www.amazon.com/dp/B072BL2VX1/ref=cm_sw_em_r_mt_dp_U_rCuJDbT70DG1J
 - Standed-Core Wire                                x1.
 https://www.adafruit.com/product/2987
-- 8 Channel DC 5V Relay Module with Optocoupler    x1.
-https://www.amazon.com/Elegoo-Module-Optocoupler-Arduino-Raspberry/dp/B07F623PHG
 
 Software:
-- Anrduino IDE.
-- Python Anaconda.
+- Azure Cloud.
+- Mouse Recorder Premium.
+- Node-Red.
+- Arduino IDE.
+- Python.
 - Cloud MQTT.
 
 ## Connection Diagram:
 
 This is the connection diagram of the system:
+<img src="https://i.ibb.co/QDNmyHh/Arduino5v-bb.png" width="800">
 
-<img src="https://i.ibb.co/TTHwbv7/Digram-Rehab.png" width="800">
+If you have a Arduino Mini pro 3.3v version you dont need the resistors:
+<img src="https://i.ibb.co/q57Pcx1/Arduino3-3-bbb.png" width="800">
 
-Arm Connection Diagram:
+Services Connection Diagram:
 
 <img src="https://hackster.imgix.net/uploads/attachments/942233/68747470733a2f2f692e6962622e636f2f4832344451384e2f41524d2d62622e706e67.png" width="800">
 
