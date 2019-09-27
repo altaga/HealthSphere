@@ -116,7 +116,7 @@ Remember to download the program for the Azure Sphere called "Health Sphere", on
           "EntryPoint": "/bin/app",
           "CmdArgs": [ "xxxxxxxxxxxxx" ],
           "Capabilities": {
-            "AllowedConnections": [ "global.azure-devices-provisioning.net", "xxxxxxxxxxxxxx.azure-devices.net" ],
+            "AllowedConnections": [ "global.azure-devices-provisioning.net", "xxxxxxxx.azure-devices.net" ],
             "AllowedTcpServerPorts": [],
             "AllowedUdpServerPorts": [],
             "Gpio": [ 0, 4, 5, 8, 9, 10, 12, 13, 34 ],
@@ -173,6 +173,15 @@ The simulator will send the heart rate data every 10 seconds to the Azure Sphere
 (We are considering that the device that would measure the heart rate in the patient is communicated by Serial)
 - The simulator changes the frequency every 10 seconds, to be a little more realistic.
 
+I recommend doing the circuit on a PCB or a Prototype Board so that it can be placed as a module for your Azure Sphere.
+
+<img src = "https://i.ibb.co/D1zCJkK/20190926-231417.jpg" width = "400">
+<img src = "https://i.ibb.co/vdLTdt5/20190926-231357.jpg" width = "400">
+<img src = "https://i.ibb.co/9WW4rNG/20190926-231348.jpg" width = "400">
+<img src = "https://i.ibb.co/mHWkM24/20190926-231503.jpg" width = "400">
+
+Run the program "HealthSphere" on the Azure Sphere board and later we will see how to visualize the data we send in the Azure CLI.
+
 ## Azure CLI Setup:
 
 To install the Azure CLI you need to follow the following tutorial according to your OS.
@@ -187,7 +196,7 @@ After that log in to your azure account.
 
     az login
     
-
+Una vez terminado esto podemos revisar
 
 <img src = "https://i.ibb.co/zZSCtkK/image.png" width = "500">
 
