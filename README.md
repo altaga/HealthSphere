@@ -167,7 +167,8 @@ These comma separated values it can be easily passed to arduino as an array.
 The complete code is in the "Arduino Code" folder, open in Arduino IDE and flash on your Arduino board, open the plotter monitor and you will see my ECG simulated by the Arduino.
 
 Serial Connection:
-<img src = "https://i.ibb.co/gwy1mPc/20190926-232532.jpg" width = "600">
+
+<img src = "https://i.ibb.co/gwy1mPc/20190926-232532.jpg" width = "400">
 
 PC:
 <img src = "https://i.ibb.co/xqTR742/image.png" width = "1000">
