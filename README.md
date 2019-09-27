@@ -98,11 +98,11 @@ After you need process the data in a way that could be interpreted as integer nu
 
 We can note that the numbers are already integers, now in some simple way we should be able to pass them to an Arduino array, this was achieved easily by saving the data horizontally and as a CSV, so that we will have the following.
 
-<img src = "https://i.ibb.co/ZhHytxX/image.png" width = "400">
+<img src = "https://i.ibb.co/ZhHytxX/image.png" width = "300">
 
 These comma separated values it can be easily passed to arduino as an array.
 
-    unsigned int ECG [100] = {156,161,158,157, ...... 163,166,160};
+         unsigned int ECG [100] = {156,161,158,157, ...... 163,166,160};
 
 The complete code is in the "Arduino Code" folder.
 
