@@ -127,7 +127,13 @@ The simulator will send the heart rate data every 10 seconds to the Azure Sphere
 
 ## Azure CLI Setup:
 
-Press the button to create the widget.
+Para instalar el Azure CLI necesitas seguir el siguiente tutorial segun tu OS.
+
+- https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest
+
+Introduce el siguiente comando para obtener la extension de Azure IoT
+
+    az extension add --name azure-cli-iot-ext
 
 <img src = "https://i.ibb.co/zZSCtkK/image.png" width = "500">
 
