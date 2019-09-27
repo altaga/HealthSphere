@@ -114,9 +114,15 @@ These comma separated values it can be easily passed to arduino as an array.
 
     unsigned int ECG [100] = {156,161,158,157, ...... 163,166,160};
 
-The complete code is in the "Arduino Code" folder, abrelo en Arduino IDE y flashealo en tu arduino board, abre el monitor plotter y veras mi ECG simulado por el Arduino.
+The complete code is in the "Arduino Code" folder, open in Arduino IDE and flash on your Arduino board, open the plotter monitor and you will see my ECG simulated by the Arduino.
 
 <img src = "https://i.ibb.co/xqTR742/image.png" width = "1000">
+
+The simulator will send the heart rate data every 10 seconds to the Azure Sphere, , in the simulation you will also notice that the frequency changes.
+
+The Azure Sphere will send the HR to Azure IoT Hub each time the Arduino sends the serial HR data to 115200.
+
+(We are considering that the device that would measure the heart rate in the patient is communicated by Serial)
 
 ### Widget Configuration:
 
