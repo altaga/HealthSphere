@@ -82,6 +82,16 @@ The initial configuration of Azure Sphere is a bit long, however I totally recom
 
 - https://docs.microsoft.com/en-us/azure-sphere/
 
+You need to save the following data for later.
+
+- Hubname.
+
+<img src="https://i.ibb.co/nCdM4ZD/Capture.png" width="800">
+
+- Device id.
+
+<img src="https://i.ibb.co/DLCsknw/Untitled-1.png" width="800">
+
 Github Azure Samples (These samples are for the Azure Sphere from an earlier version, however the chip is the same, so most of the samples work on this Azure Sphere verison):
 
 - https://github.com/Azure/azure-sphere-samples
@@ -127,13 +137,18 @@ The simulator will send the heart rate data every 10 seconds to the Azure Sphere
 
 ## Azure CLI Setup:
 
-Para instalar el Azure CLI necesitas seguir el siguiente tutorial segun tu OS.
+To install the Azure CLI you need to follow the following tutorial according to your OS.
 
 - https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest
 
-Introduce el siguiente comando para obtener la extension de Azure IoT
+Enter the following command to get the Azure IoT extension
 
-    az extension add --name azure-cli-iot-ext
+     az extension add --name azure-cli-iot-ext
+     
+Despues de eso inicia sesion en tu cuenta de azure.
+
+    az login
+    
 
 <img src = "https://i.ibb.co/zZSCtkK/image.png" width = "500">
 
