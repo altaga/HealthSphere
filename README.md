@@ -57,16 +57,27 @@ Software:
 ## Connection Diagram:
 
 This is the connection diagram of the system, but if you have a Arduino Mini pro 3.3v version you dont need the resistors:
+
 <img src="https://i.ibb.co/LR8R4Pk/Arduino5v-bb.png" width="400">
 <img src="https://i.ibb.co/NLFvmnM/Arduino3-3-bbb.png" width="380">
 
 Services Connection Diagram:
 
-<img src="https://hackster.imgix.net/uploads/attachments/942233/68747470733a2f2f692e6962622e636f2f4832344451384e2f41524d2d62622e706e67.png" width="800">
+<img src="https://i.ibb.co/Qm0FnMm/Health-Spehrre.png" width="800">
 
-## Brainium Setup:
+## Azure Sphere Setup:
 
-### Model Training:
+The initial configuration of Azure Sphere is a bit long, however I totally recommend the official Microsoft documentation, because the instructions are very clear.
+
+- https://docs.microsoft.com/en-us/azure-sphere/
+
+Github Azure Samples (These samples are for the Azure Sphere from an earlier version, however the chip is the same, so most of the samples work on this Azure Sphere verison):
+
+- https://github.com/Azure/azure-sphere-samples
+
+- Azure Heat Map: http://avnet.me/azsphere-kit-map
+
+### Arduino ECG Simulator Setup:
 
 Before performing any other task, it was vital to be able to generate a model for elbow rehabilitation, the system can be extended to any rehabilitation but we chose elbow as the first sample.
 
