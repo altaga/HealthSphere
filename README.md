@@ -201,29 +201,45 @@ After that log in to your azure account.
 
     az login
     
-Una vez terminado esto podemos revisar que los datos esten enviandose bien a Azure IoT Hub. Corre el siguiente comando sustituyendo el HUB y DEVICEID por tus datos.
+Once this is finished we can check that the data is being sent well to Azure IoT Hub. Run the following command replacing HUBNAME and DEVICEID with your data.
 
-        az iot hub monitor-events --hub-name HUBNAME --device-id DEVICEID
+    az iot hub monitor-events --hub-name HUBNAME --device-id DEVICEID
+        
+We are receiving in the payload the heart rate every 10 seconds as we set it in the Arduino code.
 
-<img src = "https://i.ibb.co/zZSCtkK/image.png" width = "500">
+<img src = "https://i.ibb.co/Sv34gxF/Console.png" width = "600">
 
-We assign the model to the device.
+## Recieve Data and Save.
 
-<img src = "https://i.ibb.co/wC98Vs3/image.png" width = "500">
+To send the data, what I did was a process of saving, processing and sending the data "Manually", however, in the end I will show how everything can be automated through a MACRO.
 
-We create a widget as shown in the image.
+- El primer paso es ejecutar el siguiente comando, este comando guardara toda la informacion recibida por Azure CLI en un archivo.
 
-<img src = "https://i.ibb.co/tD5b4F3/image.png" width = "500">
+      az iot hub monitor-events --hub-name HUBNAME --device-id DEVICEID > datain.txt
 
-We finish the widget.
+- Ya que los datos los estamos recibiendo cada 10 segundos, solo tendremos que esperar 10 segundos la ejecucion del comando antes de detenerlo con CTRL+C, dentro del archivo datain.txt, podremos encontrar los datos recibidos.
 
-<img src = "https://i.ibb.co/dkB1cJ0/image.png" width = "500">
+<img src = "https://i.ibb.co/QXw9M5h/image.png" width = "600">
 
-We will get a result like the following.
+## Setup Python Code.
 
-<img src = "https://i.ibb.co/2shLmdn/image.png" width = "500">
+Para el posterior procesado de los datos deberemos configurar las credenciales de CloudMQTT que utilizaremos para mandar los datos recibidos desde el CLI.
 
-### Obtaining Credentials.
+- Create an account in Cloud MQTT.
+
+https://www.cloudmqtt.com/
+
+- Copy the credentials of "Server", "User", "Password" and "Port".
+
+<img src = "https://i.ibb.co/s9wR395/image.png" width = "1000">
+
+Dentro de el codigo de python cambiaremos los siguientes parametros por nuestras credenciales.
+
+    client.username_pw_set("USER", "PASSWORD")
+    
+    client.connect("SERVER", PORT)
+
+- Una vez tenemos los datos ahi, deberemos ejecutar el programa Exe.py en la carpeta de "Python Code", esto procesara los datos
 
 Save External access token and User ID.
 
