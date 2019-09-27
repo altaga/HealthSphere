@@ -1,0 +1,84 @@
+﻿  
+build_options.h(23,2): warning : #warning "Building for IoT Hub Application" [-Wcpp]
+build_options.h(23,2): warning :  #warning "Building for IoT Hub Application"
+build_options.h(23,2): warning :   ^~~~~~~
+  In function 'AccelTimerEventHandler':
+i2c.c(142,86): warning : conversion from 'int' to 'int16_t' {aka 'short int'} may change value [-Wconversion]
+i2c.c(142,86): warning :    angular_rate_dps[0] = (lsm6dso_from_fs2000_to_mdps(data_raw_angular_rate.i16bit[0] - raw_angular_rate_calibration.i16bit[0])) / 1000.0;
+i2c.c(142,86): warning :                                                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+i2c.c(142,25): warning : conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+i2c.c(142,25): warning :    angular_rate_dps[0] = (lsm6dso_from_fs2000_to_mdps(data_raw_angular_rate.i16bit[0] - raw_angular_rate_calibration.i16bit[0])) / 1000.0;
+i2c.c(142,25): warning :                          ^
+i2c.c(143,86): warning : conversion from 'int' to 'int16_t' {aka 'short int'} may change value [-Wconversion]
+i2c.c(143,86): warning :    angular_rate_dps[1] = (lsm6dso_from_fs2000_to_mdps(data_raw_angular_rate.i16bit[1] - raw_angular_rate_calibration.i16bit[1])) / 1000.0;
+i2c.c(143,86): warning :                                                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+i2c.c(143,25): warning : conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+i2c.c(143,25): warning :    angular_rate_dps[1] = (lsm6dso_from_fs2000_to_mdps(data_raw_angular_rate.i16bit[1] - raw_angular_rate_calibration.i16bit[1])) / 1000.0;
+i2c.c(143,25): warning :                          ^
+i2c.c(144,86): warning : conversion from 'int' to 'int16_t' {aka 'short int'} may change value [-Wconversion]
+i2c.c(144,86): warning :    angular_rate_dps[2] = (lsm6dso_from_fs2000_to_mdps(data_raw_angular_rate.i16bit[2] - raw_angular_rate_calibration.i16bit[2])) / 1000.0;
+i2c.c(144,86): warning :                                                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+i2c.c(144,25): warning : conversion from 'double' to 'float' may change value [-Wfloat-conversion]
+i2c.c(144,25): warning :    angular_rate_dps[2] = (lsm6dso_from_fs2000_to_mdps(data_raw_angular_rate.i16bit[2] - raw_angular_rate_calibration.i16bit[2])) / 1000.0;
+i2c.c(144,25): warning :                          ^
+i2c.c(177,60): warning : conversion to 'uint32_t' {aka 'unsigned int'} from 'int32_t' {aka 'int'} may change the sign of the result [-Wsign-conversion]
+i2c.c(177,60): warning :     pressure_hPa = lps22hh_from_lsb_to_hpa(data_raw_pressure.i32bit);
+i2c.c(177,60): warning :                                            ~~~~~~~~~~~~~~~~~^~~~~~~
+  In function 'initI2c':
+i2c.c(335,9): warning : unused variable 'lps22hhDetected' [-Wunused-variable]
+i2c.c(335,9): warning :     bool lps22hhDetected = false;
+i2c.c(335,9): warning :          ^~~~~~~~~~~~~~~
+i2c.c(371,86): warning : conversion from 'int' to 'int16_t' {aka 'short int'} may change value [-Wconversion]
+i2c.c(371,86): warning :     angular_rate_dps[0] = lsm6dso_from_fs2000_to_mdps(data_raw_angular_rate.i16bit[0] - raw_angular_rate_calibration.i16bit[0]);
+i2c.c(371,86): warning :                                                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+i2c.c(372,86): warning : conversion from 'int' to 'int16_t' {aka 'short int'} may change value [-Wconversion]
+i2c.c(372,86): warning :     angular_rate_dps[1] = lsm6dso_from_fs2000_to_mdps(data_raw_angular_rate.i16bit[1] - raw_angular_rate_calibration.i16bit[1]);
+i2c.c(372,86): warning :                                                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+i2c.c(373,86): warning : conversion from 'int' to 'int16_t' {aka 'short int'} may change value [-Wconversion]
+i2c.c(373,86): warning :     angular_rate_dps[2] = lsm6dso_from_fs2000_to_mdps(data_raw_angular_rate.i16bit[2] - raw_angular_rate_calibration.i16bit[2]);
+i2c.c(373,86): warning :                                                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+i2c.c(377,31): warning : suggest parentheses around comparison in operand of '==' [-Wparentheses]
+i2c.c(377,31): warning :   } while (angular_rate_dps[0] == angular_rate_dps[1] == angular_rate_dps[2] == 0.0);
+i2c.c(377,31): warning :            ~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+i2c.c(377,54): warning : suggest parentheses around comparison in operand of '==' [-Wparentheses]
+i2c.c(377,54): warning :   } while (angular_rate_dps[0] == angular_rate_dps[1] == angular_rate_dps[2] == 0.0);
+i2c.c(377,54): warning :            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+  In function 'lsm6dso_read_lps22hh_cx':
+i2c.c(585,28): warning : conversion from 'int' to 'uint8_t' {aka 'unsigned char'} may change value [-Wconversion]
+i2c.c(585,28): warning :    sh_cfg_read.slv_subadd = reg+i;
+i2c.c(585,28): warning :                             ^~~
+i2c.c(620,42): warning : passing argument 2 of 'lsm6dso_sh_read_data_raw_get' from incompatible pointer type [-Wincompatible-pointer-types]
+i2c.c(620,42): warning :    lsm6dso_sh_read_data_raw_get(&dev_ctx, buffer);
+i2c.c(620,42): warning :                                           ^~~~~~
+  
+lsm6dso_reg.h(2608,61): message : expected 'lsm6dso_emb_sh_read_t *' {aka 'struct <anonymous> *'} but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+lsm6dso_reg.h(2608,61): message :                                       lsm6dso_emb_sh_read_t *val);
+lsm6dso_reg.h(2608,61): message :                                       ~~~~~~~~~~~~~~~~~~~~~~~^~~
+  Azure Sphere Utility version 19.5.4.53731
+  Copyright (C) Microsoft Corporation. All rights reserved.
+   
+  Start time (UTC): Thursday, 26 September 2019 06:56:50 
+  verbose: Creating image package. 
+  verbose: Azure Sphere application image package written. 
+  verbose: Appending metadata. 
+  verbose: Wrote metadata:
+    Section: Identity
+      Image Type:           Application
+      Component ID:         685f13af-25a5-40b2-8dd8-8cbc253ecbd8
+      Image ID:             1d073416-4bde-4f23-ac2e-632bb6d68c09
+    Section: Signature
+      Signing Type:         ECDsa256
+      Cert:                 a8d5cc6958f48710140d7a26160fc1cfc31f5df0
+    Section: Debug
+      Image Name:           AvnetStarterKit-Hackster.io-V1.0
+      Built On (UTC):       26/09/2019 06:56:50
+      Built On (Local):     26/09/2019 01:56:50
+    Section: Temporary Image
+      Remove image at boot: False
+      Under development:    True
+    Section: ABI Depends
+      Depends on:           ApplicationRuntime, version 2
+   
+  verbose: Packaging completed successfully. 
+  verbose: Output file is at: C:\Users\VAI\source\repos\AzureSphereHacksterTTC\AvnetStarterKitReferenceDesign\bin\ARM\Debug\AvnetStarterKitReferenceDesign.imagepackage 
+  Command completed successfully in 00:00:00.4542469. 
