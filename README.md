@@ -235,9 +235,8 @@ https://www.cloudmqtt.com/
 
 Within the python code we will change the following parameters for our credentials.
 
-     client.username_pw_set ("USER", "PASSWORD")
-    
-     client.connect ("SERVER", PORT)
+     client.username_pw_set ("USER", "PASSWORD")
+     client.connect ("SERVER", PORT)
 
 Once we have the data there, we must execute the Exe.py program in the "Python Code" folder, this will process the data and send it to the CloudMQTT with the topic "/ Azure"
 
