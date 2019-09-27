@@ -266,42 +266,21 @@ Set User and Password.
 
 <img src = "https://i.ibb.co/cDjySLr/image.png" width = "600">
 
-Si todo funciona bien presionar el boton de "Deploy" y entrar a la siguiente URL para revisar el Dashboard.
+If everything works fine press the "Deploy" button and enter the following URL to check the Dashboard.
 
 http://localhost:1880/ui
 
-Si ejecutamos el archivo Exe.py, veremos como aparecen los datos en el Dashboard.
+If we execute the Exe.py file, we will see how the data appears on the Dashboard.
 
-## Laptop Setup:
+<img src = "https://i.ibb.co/1fqQnfw/image.png" width = "800">
 
-Install Python Anaconda so that you can easily manipulate the MQTT broker, this had to be done because the Arduino library ESP32 for MQTT does not accept connectivity such as Websocket.
+## Automate all:
 
-https://www.anaconda.com/distribution/
+To Automate everything, create a macro with a program called "Mouse Recorder Premium", the macro of that program is in the "Macro File" folder.
 
-Then install this library:
+In this part of the macro we must change for our values, so that it works.
 
-    pip install paho-mqtt
-
-Download the file Python Files, open "MQTTRehab.py" and put your credentials.
-
-## Arm Setup:
-
-Follow this diagram without making a mistake, IF YOU DON'T CONNECT IT WELL YOU CAN DO A SHORT CIRCUIT:
-
-<img src="https://hackster.imgix.net/uploads/attachments/942233/68747470733a2f2f692e6962622e636f2f4832344451384e2f41524d2d62622e706e67.png" width="800">
-
-After connecting all program the ESP32 with the code in the "Arduino Files" folder.
-
-<img src="https://www.e-ika.com/images/thumbs/0005376_placa-esp32-wifi-bluetooth_600.jpeg" width="800">
-
-Open the "ESP32ARMRehab.ino" file and enter the CloudMQTT credentials.
-
-    const char* ssid = "YOURSSID";
-    const char* password =  "YOURPASS";
-    const char* mqttServer = "m12.cloudmqtt.com";
-    const int mqttPort = 12345;
-    const char* mqttUser = "YOURCLOUDMQTTUSER";
-    const char* mqttPassword = "YOURCLOUDMQTTPASS";
+<img src = "https://i.ibb.co/fqx8Bfm/image.png" width = "800">
 
 ## The Final Product:
 
