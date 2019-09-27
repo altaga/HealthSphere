@@ -285,9 +285,15 @@ In this part of the macro we must change for our values, so that it works.
 
 ## The Final Product:
 
+The interface:
 
+<img src = "https://i.ibb.co/XxfSjhh/image.png" width = "800">
 
-### Our Epic DEMO:
+The device:
+
+<img src = "https://i.ibb.co/0YfCDSg/20190927-025530.jpg" width = "400"><img src = "https://i.ibb.co/xSq4k24/20190927-025450.jpg" width = "400">
+
+## Our Epic DEMO:
 
 Video: Click on the image
 [![Rehab](https://i.ibb.co/6yJQnM4/4-heartdisease.png)](https://youtu.be/GYoLvldvk-s)
