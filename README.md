@@ -119,12 +119,9 @@ The complete code is in the "Arduino Code" folder, open in Arduino IDE and flash
 <img src = "https://i.ibb.co/xqTR742/image.png" width = "1000">
 
 The simulator will send the heart rate data every 10 seconds to the Azure Sphere, , in the simulation you will also notice that the frequency changes.
-
-The Azure Sphere will send the HR to Azure IoT Hub each time the Arduino sends the serial HR data to 115200.
-
+- The Azure Sphere will send the HR to Azure IoT Hub each time the Arduino sends the serial HR data to 115200.
 (We are considering that the device that would measure the heart rate in the patient is communicated by Serial)
-
-The simulator changes the frequency every 10 seconds, to be a little more realistic.
+- The simulator changes the frequency every 10 seconds, to be a little more realistic.
 
 ### Widget Configuration:
 
