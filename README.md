@@ -124,6 +124,8 @@ The Azure Sphere will send the HR to Azure IoT Hub each time the Arduino sends t
 
 (We are considering that the device that would measure the heart rate in the patient is communicated by Serial)
 
+The simulator changes the frequency every 10 seconds, to be a little more realistic.
+
 ### Widget Configuration:
 
 Press the button to create the widget.
