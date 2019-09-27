@@ -82,7 +82,7 @@ Azure Devices Heat Map:
 
 Before starting, the ECG is composed of the following graph and we will call this segment PT.
 
-<img src = "https://i.ibb.co/QKVHfw3/image.png" width = "800">
+<img src = "https://i.ibb.co/QKVHfw3/image.png" width = "500">
 
 To perform the ECG simulator, it was first necessary to have real data from an ECG. As a biomedical engineer, i had my ECG data on my computer, so i did the following:
 
@@ -98,7 +98,7 @@ After you need process the data in a way that could be interpreted as integer nu
 
 We can note that the numbers are already integers, now in some simple way we should be able to pass them to an Arduino array, this was achieved easily by saving the data horizontally and as a CSV, so that we will have the following.
 
-<img src = "https://i.ibb.co/ZhHytxX/image.png" width = "800">
+<img src = "https://i.ibb.co/ZhHytxX/image.png" width = "400">
 
 These comma separated values it can be easily passed to arduino as an array.
 
