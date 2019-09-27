@@ -196,11 +196,11 @@ To install the Azure CLI you need to follow the following tutorial according to 
 Enter the following command to get the Azure IoT extension
 
      az extension add --name azure-cli-iot-ext
-     
+
 After that log in to your azure account.
 
     az login
-    
+
 Once this is finished we can check that the data is being sent well to Azure IoT Hub. Run the following command replacing HUBNAME and DEVICEID with your data.
 
     az iot hub monitor-events --hub-name HUBNAME --device-id DEVICEID
@@ -250,7 +250,7 @@ NodeRED installation guide: https://nodered.org/docs/getting-started/windows
 
 NodeRED installation guide: https://flows.nodered.org/node/node-red-dashboard
 
-The file "flows.json" has all the information to import the flow into your NodeRED.
+The file "flows.json" in the folder "Node-RED Flow", has all the information to import the flow into your NodeRED.
 
 <img src = "https://i.ibb.co/c11ZJT8/image.png" width = "600">
 <img src = "https://i.ibb.co/nBL3M23/image.png" width = "600">
@@ -306,5 +306,4 @@ Sorry github does not allow embed videos.
 
 ## References:
 
-Links 
-
+Links
