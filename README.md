@@ -290,7 +290,7 @@ In this part of the macro we must change for our values, so that it works.
 ### Our Epic DEMO:
 
 Video: Click on the image
-[![Rehab](https://i.ibb.co/Bjg48mh/Brainium-Rehab.png)](https://youtu.be/GYoLvldvk-s)
+[![Rehab](https://i.ibb.co/6yJQnM4/4-heartdisease.png)](https://youtu.be/GYoLvldvk-s)
 
 Sorry github does not allow embed videos.
 
