@@ -145,10 +145,11 @@ Enter the following command to get the Azure IoT extension
 
      az extension add --name azure-cli-iot-ext
      
-Despues de eso inicia sesion en tu cuenta de azure.
+After that log in to your azure account.
 
     az login
     
+
 
 <img src = "https://i.ibb.co/zZSCtkK/image.png" width = "500">
 
