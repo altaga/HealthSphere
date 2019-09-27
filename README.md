@@ -11,7 +11,8 @@ Always use technology to improve the world, if you are a black hat or gray hat h
 * [Introduction](#introduction)
 * [Materials](#materials)
 * [Connection Diagram](#connection-diagram)
-* [Brainium Setup](#brainium-setup)
+* [Azure Sphere and Azure Cloud Setup](#azure-sphere-and-azure-cloud-setup)
+* [Arduino ECG Simulator Setup](#arduino-ecg-simulator-setup)
 * [CloudMQTT Setup](#cloudmqtt-setup)
 * [Laptop Setup](#laptop-setup)
 * [Arm Setup](#arm-setup)
@@ -74,7 +75,7 @@ Services Connection Diagram:
 
 <img src="https://i.ibb.co/Qm0FnMm/Health-Spehrre.png" width="800">
 
-## Azure Sphere Setup:
+## Azure Sphere and Azure Cloud Setup:
 
 The initial configuration of Azure Sphere is a bit long, however I totally recommend the official Microsoft documentation, because the instructions are very clear.
 
