@@ -291,7 +291,7 @@ The interface:
 
 The device:
 
-<img src = "https://i.ibb.co/0YfCDSg/20190927-025530.jpg" width = "400"><img src = "https://i.ibb.co/xSq4k24/20190927-025450.jpg" width = "400">
+<img src = "https://i.ibb.co/0YfCDSg/20190927-025530.jpg" height = "300"><img src = "https://i.ibb.co/xSq4k24/20190927-025450.jpg" height = "300">
 
 ## Our Epic DEMO:
 
