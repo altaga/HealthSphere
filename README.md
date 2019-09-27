@@ -74,36 +74,37 @@ Github Azure Samples (These samples are for the Azure Sphere from an earlier ver
 
 - https://github.com/Azure/azure-sphere-samples
 
+Azure Devices Heat Map:
+
 - Azure Heat Map: http://avnet.me/azsphere-kit-map
 
 ### Arduino ECG Simulator Setup:
 
-Before performing any other task, it was vital to be able to generate a model for elbow rehabilitation, the system can be extended to any rehabilitation but we chose elbow as the first sample.
+Before starting, the ECG is composed of the following graph and we will call this segment PT.
 
-4 basic movements were programmed for the rehabilitation of the elbow, of which 3 of them will be used in the final rehabilitation.
+<img src = "https://i.ibb.co/QKVHfw3/image.png" width = "800">
 
-Elbow flexoextension:
+To perform the ECG simulator, it was first necessary to have real data from an ECG. As a biomedical engineer, i had my ECG data on my computer, so i did the following:
 
-<img src="https://i.ibb.co/qkX5VfF/image.png" width="400">
-<img src="https://i.ibb.co/RBY7K7L/image.png" width="400">
+<img src = "https://i.ibb.co/T2xTSJh/image.png" width = "800">
 
-Arm Lift:
+From my ECG I only took a PT section that looked good.
 
-<img src="https://i.ibb.co/CzXGq2v/image.png" width="400">
-<img src="https://i.ibb.co/XZdHHrS/image.png" width="400">
+<img src = "https://i.ibb.co/qYw5RVq/image.png" width = "800">
 
-Elbow Flexion:
+After you need process the data in a way that could be interpreted as integer numbers, through rounding and amplification, the following graph remains.
 
-<img src="https://i.ibb.co/jkJ4qfd/image.png" width="400">
-<img src="https://i.ibb.co/hDrN088/image.png" width="400">
+<img src = "https://i.ibb.co/1XBqMY7/image.png" width = "800">
 
-This is the model that was developed and the number of repetitions for each movement:
+We can note that the numbers are already integers, now in some simple way we should be able to pass them to an Arduino array, this was achieved easily by saving the data horizontally and as a CSV, so that we will have the following.
 
-<img src="https://i.ibb.co/mbXWD8T/image.png" width="400">
+<img src = "https://i.ibb.co/ZhHytxX/image.png" width = "800">
 
-Model motion confusion matrix:
+These comma separated values it can be easily passed to arduino as an array.
 
-<img src="https://i.ibb.co/m4jWHMt/image.png" width="400">
+    unsigned int ECG [100] = {156,161,158,157, ...... 163,166,160};
+
+The complete code is in the "Arduino Code" folder.
 
 ### Widget Configuration:
 
