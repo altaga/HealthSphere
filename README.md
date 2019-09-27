@@ -285,24 +285,7 @@ In this part of the macro we must change for our values, so that it works.
 
 ## The Final Product:
 
-Robotic Arm:
 
-<img src="https://i.ibb.co/X3JNNLB/DSC00056-2.jpg" width="800">
-<img src="https://i.ibb.co/HHM2DQ1/DSC00059-2.jpg" width="800">
-
-ESP32 Arm Driver:
-
-<img src="https://i.ibb.co/mJ73KNs/DSC00068.jpg" width="800">
-
-Brainium Module:
-
-<img src="https://i.ibb.co/cFZrYdJ/DSC00061-2.jpg" width="800">
-<img src="https://i.ibb.co/kgds0Xn/DSC00062-2.jpg" width="800">
-<img src="https://i.ibb.co/xFm1f0T/DSC00063-2.jpg" width="800">
-
-Complete system:
-
-<img src="https://i.ibb.co/dMb7c6V/DSC00066-2.jpg" width="800">
 
 ### Our Epic DEMO:
 
