@@ -213,17 +213,17 @@ We are receiving in the payload the heart rate every 10 seconds as we set it in 
 
 To send the data, what I did was a process of saving, processing and sending the data "Manually", however, in the end I will show how everything can be automated through a MACRO.
 
-- El primer paso es ejecutar el siguiente comando, este comando guardara toda la informacion recibida por Azure CLI en un archivo.
+- The first step is to execute the following command, this command will save all the information received by Azure CLI in a file.
 
-      az iot hub monitor-events --hub-name HUBNAME --device-id DEVICEID > datain.txt
+       az iot hub monitor-events --hub-name HUBNAME --device-id DEVICEID> datain.txt
 
-- Ya que los datos los estamos recibiendo cada 10 segundos, solo tendremos que esperar 10 segundos la ejecucion del comando antes de detenerlo con CTRL+C, dentro del archivo datain.txt, podremos encontrar los datos recibidos.
+- Since we are receiving the data every 10 seconds, we will only have to wait 10 seconds to execute the command before stopping it with CTRL + C, inside the datain.txt file, we can find the received data.
 
 <img src = "https://i.ibb.co/QXw9M5h/image.png" width = "600">
 
 ## Setup Python Code.
 
-Para el posterior procesado de los datos deberemos configurar las credenciales de CloudMQTT que utilizaremos para mandar los datos recibidos desde el CLI.
+For the subsequent processing of the data we must configure the CloudMQTT credentials that we will use to send the data received from the CLI.
 
 - Create an account in Cloud MQTT.
 
@@ -233,27 +233,44 @@ https://www.cloudmqtt.com/
 
 <img src = "https://i.ibb.co/s9wR395/image.png" width = "1000">
 
-Dentro de el codigo de python cambiaremos los siguientes parametros por nuestras credenciales.
+Within the python code we will change the following parameters for our credentials.
 
-    client.username_pw_set("USER", "PASSWORD")
-    
-    client.connect("SERVER", PORT)
+     client.username_pw_set ("USER", "PASSWORD")
+    
+     client.connect ("SERVER", PORT)
 
-- Una vez tenemos los datos ahi, deberemos ejecutar el programa Exe.py en la carpeta de "Python Code", esto procesara los datos
+- Once we have the data there, we must execute the Exe.py program in the "Python Code" folder, this will process the data and send it to the CloudMQTT with the topic "/ Azure"
 
-Save External access token and User ID.
+## Node-Red Setup:
 
-<img src = "https://i.ibb.co/DCcdzCP/image.png" width = "500">
+Node Red is a tool for NodeJS where we can integrate services easily, without code and, of course, create excellent dashboards.
 
-## CloudMQTT Setup:
+NodeJS installation guide: https://www.guru99.com/download-install-node-js.html
+NodeRED installation guide: https://nodered.org/docs/getting-started/windows
+NodeRED installation guide: https://flows.nodered.org/node/node-red-dashboard
 
-Create an account in Cloud MQTT.
+The file "flows.json" has all the information to import the flow into your NodeRED.
 
-https://www.cloudmqtt.com/
+<img src = "https://i.ibb.co/c11ZJT8/image.png" width = "600">
+<img src = "https://i.ibb.co/nBL3M23/image.png" width = "600">
 
-Copy the credentials of "Server", "User", "Password" and "Port".
+Once that is done we will edit the MQTT node to enter our credentials.
 
-<img src = "https://i.ibb.co/s9wR395/image.png" width = "1000">
+<img src = "https://i.ibb.co/GQdDKtk/image.png" width = "600">
+
+Set Server and Port.
+
+<img src = "https://i.ibb.co/wdzbztp/image.png" width = "600">
+
+Set User and Password.
+
+<img src = "https://i.ibb.co/cDjySLr/image.png" width = "600">
+
+Si todo funciona bien presionar el boton de "Deploy" y entrar a la siguiente URL para revisar el Dashboard.
+
+http://localhost:1880/ui
+
+Si ejecutamos el archivo Exe.py, veremos como aparecen los datos en el Dashboard.
 
 ## Laptop Setup:
 
