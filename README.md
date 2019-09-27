@@ -21,7 +21,7 @@ Always use technology to improve the world, if you are a black hat or gray hat h
 
 ## Introduction:
 
-His heart beats 115200 times a day, it is such a fine machinery that does not stop during our lives, however, not many people have the advantage to have this machinery in good condition, many factors of daily life can permanently affect cardiac function .
+Our heart beats 115200 times a day, it is such a fine machinery that does not stop during our lives, however, not many people have the advantage to have this machinery in good condition, many factors of daily life can permanently affect cardiac function .
 
 Factors such as:
 
