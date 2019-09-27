@@ -112,9 +112,11 @@ We can note that the numbers are already integers, now in some simple way we sho
 
 These comma separated values it can be easily passed to arduino as an array.
 
-         unsigned int ECG [100] = {156,161,158,157, ...... 163,166,160};
+    unsigned int ECG [100] = {156,161,158,157, ...... 163,166,160};
 
-The complete code is in the "Arduino Code" folder.
+The complete code is in the "Arduino Code" folder, abrelo en Arduino IDE y flashealo en tu arduino board, abre el monitor plotter y veras mi ECG simulado por el Arduino.
+
+<img src = "https://i.ibb.co/xqTR742/image.png" width = "1000">
 
 ### Widget Configuration:
 
