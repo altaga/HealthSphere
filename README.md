@@ -34,6 +34,8 @@ Too many people must undergo cardiac tests frequently in expensive hospitals wit
 
 That's why I decided through AzureSphere's amazing technology to create a real-time heart rate monitoring system and perform a dashboard deployment.
 
+<img src="https://i.ibb.co/s68S6fw/image.png" width="380">
+
 ## Materials:
 
 Hardware:
