@@ -59,6 +59,7 @@ https://www.amazon.com/dp/B072BL2VX1/ref=cm_sw_em_r_mt_dp_U_rCuJDbT70DG1J
 https://www.adafruit.com/product/2987
 
 Software:
+- Visual Studio
 - Azure Cloud.
 - Mouse Recorder Premium.
 - Node-Red.
@@ -91,6 +92,43 @@ You need to save the following data for later.
 - Device id.
 
 <img src="https://i.ibb.co/DLCsknw/Untitled-1.png" width="800">
+
+- ID Scope
+
+<img src="https://i.ibb.co/qmVG7HK/dvdsfsd.png" width="800">
+
+- Auth Number (Azure Sphere CLI)
+
+        azsphere tenant show-selected
+
+<img src="https://i.ibb.co/3kNZ6HY/sdavxzc-Xc.png" width="800">
+
+Remember to download the program for the Azure Sphere called "Health Sphere", once you download it, open it with VS and in the file "app_manifiest.json"
+
+- Write ID Scope in  "CmdArgs": [ "xxxxxxxxxxxxx" ]
+- Write Hubname in "AllowedConnections": [ "global.azure-devices-provisioning.net", "xxxxxxxxxxxxxx.azure-devices.net" ]
+- Write Auth Number in "DeviceAuthentication": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+
+        {
+          "SchemaVersion": 1,
+          "Name": "AvnetStarterKit-Hackster.io-V1.0",
+          "ComponentId": "685f13af-25a5-40b2-8dd8-8cbc253ecbd8",
+          "EntryPoint": "/bin/app",
+          "CmdArgs": [ "xxxxxxxxxxxxx" ],
+          "Capabilities": {
+            "AllowedConnections": [ "global.azure-devices-provisioning.net", "xxxxxxxxxxxxxx.azure-devices.net" ],
+            "AllowedTcpServerPorts": [],
+            "AllowedUdpServerPorts": [],
+            "Gpio": [ 0, 4, 5, 8, 9, 10, 12, 13, 34 ],
+            "Uart": [ "ISU0" ],
+            "I2cMaster": [ "ISU2" ],
+            "SpiMaster": [],
+            "WifiConfig": true,
+            "NetworkConfig": false,
+            "SystemTime": false,
+            "DeviceAuthentication": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+          }
+        }
 
 Github Azure Samples (These samples are for the Azure Sphere from an earlier version, however the chip is the same, so most of the samples work on this Azure Sphere verison):
 
