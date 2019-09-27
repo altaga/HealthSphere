@@ -13,6 +13,7 @@ Always use technology to improve the world, if you are a black hat or gray hat h
 * [Connection Diagram](#connection-diagram)
 * [Azure Sphere and Azure Cloud Setup](#azure-sphere-and-azure-cloud-setup)
 * [Arduino ECG Simulator Setup](#arduino-ecg-simulator-setup)
+* [Azure CLI Setup](#azure-cli-setup)
 * [CloudMQTT Setup](#cloudmqtt-setup)
 * [Laptop Setup](#laptop-setup)
 * [Arm Setup](#arm-setup)
@@ -89,7 +90,7 @@ Azure Devices Heat Map:
 
 - Azure Heat Map: http://avnet.me/azsphere-kit-map
 
-### Arduino ECG Simulator Setup:
+## Arduino ECG Simulator Setup:
 
 Before starting, the ECG is composed of the following graph and we will call this segment PT.
 
@@ -124,7 +125,7 @@ The simulator will send the heart rate data every 10 seconds to the Azure Sphere
 (We are considering that the device that would measure the heart rate in the patient is communicated by Serial)
 - The simulator changes the frequency every 10 seconds, to be a little more realistic.
 
-### Widget Configuration:
+## Azure CLI Setup:
 
 Press the button to create the widget.
 
