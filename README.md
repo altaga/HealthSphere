@@ -201,7 +201,9 @@ After that log in to your azure account.
 
     az login
     
-Una vez terminado esto podemos revisar
+Una vez terminado esto podemos revisar que los datos esten enviandose bien a Azure IoT Hub. Corre el siguiente comando sustituyendo el HUB y DEVICEID por tus datos.
+
+        az iot hub monitor-events --hub-name HUBNAME --device-id DEVICEID
 
 <img src = "https://i.ibb.co/zZSCtkK/image.png" width = "500">
 
