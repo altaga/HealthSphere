@@ -239,14 +239,16 @@ Within the python code we will change the following parameters for our credentia
     
      client.connect ("SERVER", PORT)
 
-- Once we have the data there, we must execute the Exe.py program in the "Python Code" folder, this will process the data and send it to the CloudMQTT with the topic "/ Azure"
+Once we have the data there, we must execute the Exe.py program in the "Python Code" folder, this will process the data and send it to the CloudMQTT with the topic "/ Azure"
 
 ## Node-Red Setup:
 
 Node Red is a tool for NodeJS where we can integrate services easily, without code and, of course, create excellent dashboards.
 
 NodeJS installation guide: https://www.guru99.com/download-install-node-js.html
+
 NodeRED installation guide: https://nodered.org/docs/getting-started/windows
+
 NodeRED installation guide: https://flows.nodered.org/node/node-red-dashboard
 
 The file "flows.json" has all the information to import the flow into your NodeRED.
