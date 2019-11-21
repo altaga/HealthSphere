@@ -154,6 +154,10 @@ En este caso la frecuencia la obtendremos mediante un algoritmo implementado en 
 
 - Primero obtenemos los rangos en los cuales esta trabajando nuestro modulo AD8232.
 
+<img src = "https://i.ibb.co/4Nw8nbd/image.png" width = "800">
+
+En esta caso podemos ver que la onda R siempre sobrepasa el valor de 650, asi que tomaremos ese valor como nuestra referencia para obtener el segmento RR.
+
 
 
 ## Azure CLI Setup:
