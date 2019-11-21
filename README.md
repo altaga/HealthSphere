@@ -150,6 +150,10 @@ Azure Devices Heat Map:
 
 - Azure Heat Map: http://avnet.me/azsphere-kit-map
 
+UPDATE 21/11/2019:This project is already updated to the "3+Beta1909" version of the Target API Set, many projects will not work in Visual Studio, they do not configure it in this version.
+
+https://docs.microsoft.com/en-us/azure-sphere/resources/release-notes-1909
+
 ## Arduino Holter Monitor:
 
 Before starting, the EKG is composed of the following graph and we will call this segment PT.
