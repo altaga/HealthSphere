@@ -195,7 +195,7 @@ Podemos observar que la onda aproximadamente va desde los 420 a los 680 en la le
 <img src = "https://i.ibb.co/McNzxM7/image.png" height = "100">
 <img src = "https://i.ibb.co/fxxRkyN/image.png" height = "100">
 
-- Aqui una muestra que el algoritmo puede detectar la frecuencia correcta, en la derecha estan los valores obtenidos por el Arduino y en la izquierda un una pulsera Mi Band de Xiaomi.
+- Aqui una muestra que el algoritmo puede detectar la frecuencia correcta, en la derecha estan los valores obtenidos por el Arduino y en la izquierda un una pulsera Mi Band 3 de Xiaomi.
 
 <img src = "https://i.ibb.co/w7HpBFJ/fdtjdtu.png" width = "581"><img src = "https://i.ibb.co/QkgfGPm/20191121-134314.jpg" width = "277">
 
