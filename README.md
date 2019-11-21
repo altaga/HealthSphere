@@ -12,7 +12,7 @@ Always use technology to improve the world, if you are a black hat or gray hat h
 * [Materials](#materials)
 * [Connection Diagram](#connection-diagram)
 * [Azure Sphere and Azure Cloud Setup](#azure-sphere-and-azure-cloud-setup)
-* [Arduino ECG Simulator Setup](#arduino-ecg-simulator-setup)
+* [Arduino Holter Monitor](#arduino-holter-monitor)
 * [Azure CLI Setup](#azure-cli-setup)
 * [Recieve Data and Save](#recieve-data-and-save)
 * [Setup Python Code](#setup-python-code)
@@ -140,54 +140,21 @@ Azure Devices Heat Map:
 
 - Azure Heat Map: http://avnet.me/azsphere-kit-map
 
-## Arduino ECG Simulator Setup:
+## Arduino Holter Monitor:
 
-Before starting, the ECG is composed of the following graph and we will call this segment PT.
+Before starting, the EKG is composed of the following graph and we will call this segment PT.
 
 <img src = "https://i.ibb.co/QKVHfw3/image.png" width = "500">
 
-To perform the ECG simulator, it was first necessary to have real data from an ECG. As a biomedical engineer, i had my ECG data on my computer, so i did the following:
+La frecuencia cardiaca, se obtiene primordialmente de obtener la distancia entre los picos de la grafica, a esto se le llama segmento RR.
 
-<img src = "https://i.ibb.co/T2xTSJh/image.png" width = "800">
+<img src = "https://ccenf.pt/portals/0/Images/ecgs/ekg.png" width = "800">
 
-From my ECG I only took a PT section that looked good.
+En este caso la frecuencia la obtendremos mediante un algoritmo implementado en arduino.
 
-<img src = "https://i.ibb.co/qYw5RVq/image.png" width = "800">
+- Primero obtenemos los rangos en los cuales esta trabajando nuestro modulo AD8232.
 
-After you need process the data in a way that could be interpreted as integer numbers, through rounding and amplification, the following graph remains.
 
-<img src = "https://i.ibb.co/1XBqMY7/image.png" width = "800">
-
-We can note that the numbers are already integers, now in some simple way we should be able to pass them to an Arduino array, this was achieved easily by saving the data horizontally and as a CSV, so that we will have the following.
-
-<img src = "https://i.ibb.co/ZhHytxX/image.png" width = "300">
-
-These comma separated values it can be easily passed to arduino as an array.
-
-    unsigned int ECG [100] = {156,161,158,157, ...... 163,166,160};
-
-The complete code is in the "Arduino Code" folder, open in Arduino IDE and flash on your Arduino board, open the plotter monitor and you will see my ECG simulated by the Arduino.
-
-Serial Connection:
-
-<img src = "https://i.ibb.co/gwy1mPc/20190926-232532.jpg" width = "400">
-
-PC:
-<img src = "https://i.ibb.co/xqTR742/image.png" width = "1000">
-
-The simulator will send the heart rate data every 10 seconds to the Azure Sphere, , in the simulation you will also notice that the frequency changes.
-- The Azure Sphere will send the HR to Azure IoT Hub each time the Arduino sends the serial HR data to 115200.
-(We are considering that the device that would measure the heart rate in the patient is communicated by Serial)
-- The simulator changes the frequency every 10 seconds, to be a little more realistic.
-
-I recommend doing the circuit on a PCB or a Prototype Board so that it can be placed as a module for your Azure Sphere.
-
-<img src = "https://i.ibb.co/D1zCJkK/20190926-231417.jpg" width = "400">
-<img src = "https://i.ibb.co/vdLTdt5/20190926-231357.jpg" width = "400">
-<img src = "https://i.ibb.co/9WW4rNG/20190926-231348.jpg" width = "400">
-<img src = "https://i.ibb.co/mHWkM24/20190926-231503.jpg" width = "400">
-
-Run the program "HealthSphere" on the Azure Sphere board and later we will see how to visualize the data we send in the Azure CLI.
 
 ## Azure CLI Setup:
 
@@ -298,7 +265,7 @@ The device:
 ## Our Epic DEMO:
 
 Video: Click on the image
-[![Rehab](https://i.ibb.co/6yJQnM4/4-heartdisease.png)](https://youtu.be/GYoLvldvk-s)
+[![Rehab](https://i.ibb.co/6yJQnM4/4-heartdisease.png)](https://youtu.be/da5jXiNS5is)
 
 Sorry github does not allow embed videos.
 
