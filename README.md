@@ -373,9 +373,21 @@ In this part of the macro we must change for our values, so that it works.
 
 The interface:
 
-<img src = "https://i.ibb.co/XxfSjhh/image.png" width = "800">
+<img src = "https://i.ibb.co/Tgzksrd/image.png" width = "800">
 
-The device:
+Holter Monitor:
+
+<img src = "https://i.ibb.co/thhCLyy/DSC00198.jpg" height = "300">
+<img src = "https://i.ibb.co/k5PJqWL/DSC00199.jpg" height = "300">
+<img src = "https://i.ibb.co/DMrDJsv/DSC00200.jpg" height = "300">
+<img src = "https://i.ibb.co/rZKGrnr/DSC00201.jpg" height = "300">
+<img src = "https://i.ibb.co/phHVBdM/DSC00202.jpg" height = "300">
+<img src = "https://i.ibb.co/Pj7pDg9/DSC00192.jpg" height = "300">
+<img src = "https://i.ibb.co/djjc5wT/DSC00189.jpg" height = "300">
+<img src = "https://i.ibb.co/CtX9w6w/DSC00193.jpg" height = "300">
+<img src = "https://i.ibb.co/fqLK0Tt/DSC00187.jpg" height = "300">
+
+Azure Sphere:
 
 <img src = "https://i.ibb.co/0YfCDSg/20190927-025530.jpg" height = "300"><img src = "https://i.ibb.co/xSq4k24/20190927-025450.jpg" height = "300">
 
