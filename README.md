@@ -13,6 +13,7 @@ Always use technology to improve the world, if you are a black hat or gray hat h
 * [Connection Diagram](#connection-diagram)
 * [Azure Sphere and Azure Cloud Setup](#azure-sphere-and-azure-cloud-setup)
 * [Arduino Holter Monitor](#arduino-holter-monitor)
+* [BT Modules Configuration](#bt-modules-configuration)
 * [Azure CLI Setup](#azure-cli-setup)
 * [Recieve Data and Save](#recieve-data-and-save)
 * [Setup Python Code](#setup-python-code)
@@ -62,6 +63,12 @@ https://www.amazon.com/dp/B01CKW4FSI/ref=cm_sw_em_r_mt_dp_U_2qV1DbBEJE1BV
 - Standed-Core Wire                                x1.
 
 https://www.adafruit.com/product/2987
+- USB - Serial TTL                                 x1.
+
+https://www.amazon.com/dp/B075N82CDL/ref=cm_sw_em_r_mt_dp_U_QRV1Db3CF84V8
+- 3.7V 400mAh LiPo Battery                         x1.
+
+https://www.amazon.com/dp/B016ZU9C2U/ref=cm_sw_em_r_mt_dp_U_dfW1DbPZ27F4A
 
 Software:
 - Visual Studio
@@ -201,6 +208,49 @@ Podemos observar que la onda aproximadamente va desde los 420 a los 680 en la le
 - Aqui una muestra que el algoritmo puede detectar la frecuencia correcta, en la derecha estan los valores obtenidos por el Arduino y en la izquierda un una pulsera Mi Band 3 de Xiaomi.
 
 <img src = "https://i.ibb.co/w7HpBFJ/fdtjdtu.png" width = "581"><img src = "https://i.ibb.co/QkgfGPm/20191121-134314.jpg" width = "277">
+
+## BT Modules Configuration
+
+### HC06:
+
+Connect your BT module with the USB - Serial TTL. (Serial configuration 9600 baudrate, No line ending)
+
+<img src = "http://www.naylampmechatronics.com/img/cms/Blog/Comandos%20AT%20HC-06/Comandos%20AT%20HC06%20_4.jpg" width = "800">
+
+        Send: AT
+        Response: OK
+        Send: AT+NAME<device name>
+        Response: OKsetname
+        Send: AT+PIN<4 digit code>
+        Response: OK<Any 4 digit code>
+        
+Baud Rates(1:1200, 2:2400, 3:4800, 4:9600, 5:19200, 6:38400, 7:57600, 8:115200, 9:230400, A:460800, B:921600, C:1382400)        
+        
+        Send: AT+BAUD8          (115200 Baud Rate) 
+        Response: OK<baud rate>
+
+### HC05:
+
+Connect your BT module with the USB - Serial TTL. (Serial configuration 38400 baudrate, Both NL & CR)
+
+El modulo tiene un boton, este hay que dejalo presionado al momento de conectarlo para que se habilite la funcion de configurarlo con los comandos AT, asi que recomiendo que le coloques un clip para hacerlo mas sencillo.
+
+Dejar conectado el HC06 al momento de configurar el HC05 ya que necesitamos parear los dos dositivos
+
+<img src = "https://i.ibb.co/6cMSjxf/20191121-151908.jpg" width = "800">
+
+        Send: AT
+        Response: OK
+        Send: AT+NAME<device name>
+        Response: OKsetname
+        Send: AT+PIN<4 digit code>
+        Response: OK<Any 4 digit code>
+        
+Baud Rates(1:1200, 2:2400, 3:4800, 4:9600, 5:19200, 6:38400, 7:57600, 8:115200, 9:230400, A:460800, B:921600, C:1382400)        
+        
+        Send: AT+BAUD8          (115200 Baud Rate) 
+        Response: OK<baud rate>
+
 
 ## Azure CLI Setup:
 
