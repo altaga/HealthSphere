@@ -45,19 +45,14 @@ That's why I decided through AzureSphere's amazing technology to create a real-t
 Hardware:
 
 - AzureSphere                                      x1.
-
 https://www.newark.com/avnet/aes-ms-mt3620-sk-g/ms-sphere-iot-starter-kit/dp/02AH9206
-
-- Arduino Mini Pro                                 x1.
-
-https://www.amazon.com/Arduino-Pro-Mini-328-16MHz/dp/B004G53J5I
-
-- 1k Resistors                                     x3.
-
-https://www.amazon.com/dp/B072BL2VX1/ref=cm_sw_em_r_mt_dp_U_rCuJDbT70DG1J
-
+- Arduino MKR Zero or any Arduino board            x1.
+https://store.arduino.cc/usa/arduino/arduino-mkr-family
+- HC-05                                            x1.
+https://www.amazon.com/dp/B01G9KSAF6/ref=cm_sw_em_r_mt_dp_U_8qV1DbACN624T
+- HC-06                                            x1.
+https://www.amazon.com/dp/B01CKW4FSI/ref=cm_sw_em_r_mt_dp_U_2qV1DbBEJE1BV
 - Standed-Core Wire                                x1.
-
 https://www.adafruit.com/product/2987
 
 Software:
