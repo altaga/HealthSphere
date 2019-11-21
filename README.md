@@ -71,13 +71,13 @@ Software:
 
 ## Connection Diagram:
 
-This is the connection diagram of the system, but if you have a Arduino Mini pro 3.3v version you dont need the resistors:
+This is the connection diagram of the system, Arduino and Sphere.
 
-<img src="https://i.ibb.co/LR8R4Pk/Arduino5v-bb.png" width="380"><img src="https://i.ibb.co/NLFvmnM/Arduino3-3-bbb.png" width="360">
+<img src="https://i.ibb.co/D43QqSw/Sphere-Circuit-bb.png" height = "300"><img src="https://i.ibb.co/RCk7TDh/EKGcircuit.png" height ="300">
 
 Services Connection Diagram:
 
-<img src="https://i.ibb.co/Qm0FnMm/Health-Spehrre.png" width="800">
+<img src="https://i.ibb.co/1RSSPbg/Health-Spehrre.png" width="800">
 
 ## Azure Sphere and Azure Cloud Setup:
 
