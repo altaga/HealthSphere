@@ -47,6 +47,9 @@ Hardware:
 - AzureSphere                                      x1.
 
 https://www.newark.com/avnet/aes-ms-mt3620-sk-g/ms-sphere-iot-starter-kit/dp/02AH9206
+- AD8232                                           x1.
+
+https://www.amazon.com/dp/B0111QV7OY/ref=cm_sw_em_r_mt_dp_U_VKV1Db51D1HW8
 - Arduino MKR Zero or any Arduino board            x1.
 
 https://store.arduino.cc/usa/arduino/arduino-mkr-family
