@@ -258,7 +258,8 @@ Dejar conectado el HC06 al momento de configurar el HC05 ya que necesitamos pare
         +INQ:AA1:BBB:CCC,XXXXX,XXXX
         +INQ:AA2:BBB:CCC,XXXXX,XXXX
         +INQ:AA3:BBB:CCC,XXXXX,XXXX
-        // Use the following command with all the BT addresses you get until you find HC 06, Example if AA1: BBB: CCC is the correct address.
+        // Use the following command with all the BT addresses you get until 
+        you find HC 06, Example if AA1: BBB: CCC is the correct address.
         Send: AT+RNAME?AA1,BBB,CCC
         Response: +RNAME:<device name>
         Send: AT+PAIR=AA1,BBB,CCC,9
