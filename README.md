@@ -397,7 +397,7 @@ Azure Sphere:
 ## Our Epic DEMO:
 
 Video: Click on the image
-[![Rehab](https://i.ibb.co/6yJQnM4/4-heartdisease.png)](https://youtu.be/da5jXiNS5is)
+[![Rehab](https://i.ibb.co/6yJQnM4/4-heartdisease.png)](https://youtu.be/hrTqWEb47D0)
 
 Sorry github does not allow embed videos.
 
