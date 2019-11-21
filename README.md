@@ -241,16 +241,36 @@ Dejar conectado el HC06 al momento de configurar el HC05 ya que necesitamos pare
 
         Send: AT
         Response: OK
-        Send: AT+NAME<device name>
-        Response: OKsetname
-        Send: AT+PIN<4 digit code>
-        Response: OK<Any 4 digit code>
+        Send: AT+RMAAD
+        Response: OK
+        Send: AT+ROLE=1
+        Response: OK
+        Send: AT+RESET
+        Response: OK
+        Send: AT+CMODE=0
+        Response: OK
+        Send: AT+INQM=0,5,9
+        Response: OK
+        Send: AT+INIT
+        Response: OK
+        Send: AT+INQ
+        Response: 
+        +INQ:AA1:BBB:CCC,XXXXX,XXXX
+        +INQ:AA2:BBB:CCC,XXXXX,XXXX
+        +INQ:AA3:BBB:CCC,XXXXX,XXXX
+        // Use the following command with all the BT addresses you get until you find HC 06, Example if AA1: BBB: CCC is the correct address.
+        Send: AT+RNAME?AA1,BBB,CCC
+        Response: +RNAME:<device name>
+        Send: AT+PAIR=AA1,BBB,CCC,9
+        Response: OK
+        Send: AT+BIND=AA1,BBB,CCC
+        Response: OK
+        Send: AT+CMODE=1
+        Response: OK
+        Send: AT+LINK=AA1,BBB,CCC
+        Response: OK     
         
-Baud Rates(1:1200, 2:2400, 3:4800, 4:9600, 5:19200, 6:38400, 7:57600, 8:115200, 9:230400, A:460800, B:921600, C:1382400)        
-        
-        Send: AT+BAUD8          (115200 Baud Rate) 
-        Response: OK<baud rate>
-
+Now that the connection has been formed, the HC-05 will automatically connect to the HC-06 every time they are turned on.
 
 ## Azure CLI Setup:
 
