@@ -200,9 +200,12 @@ We can observe that the wave approximately goes from 420 to 680 in the ADC readi
           }
         }
         
-- This is the formula to obtain the heart rate, general and used for our arduino, the arduino is designed to adapt to the Arudino counts in milliseconds.
+- This is the formula to obtain the heart rate.
 
 <img src = "https://i.ibb.co/McNzxM7/image.png" height = "100">
+
+The arduino generate a count in milliseconds, so the formula will be modified to work with the arduino values.
+
 <img src = "https://i.ibb.co/fxxRkyN/image.png" height = "100">
 
 - Here a sample that the algorithm can detect the correct frequency, on the right are the values obtained by the Arduino and on the left a Xiaomi Mi Band 3.
