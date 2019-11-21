@@ -377,11 +377,11 @@ The interface:
 
 Holter Monitor:
 
-<img src = "https://i.ibb.co/thhCLyy/DSC00198.jpg" height = "250"><img src = "https://i.ibb.co/k5PJqWL/DSC00199.jpg" height = "250">
-<img src = "https://i.ibb.co/DMrDJsv/DSC00200.jpg" height = "250"><img src = "https://i.ibb.co/rZKGrnr/DSC00201.jpg" height = "250">
-<img src = "https://i.ibb.co/phHVBdM/DSC00202.jpg" height = "250"><img src = "https://i.ibb.co/Pj7pDg9/DSC00192.jpg" height = "250">
-<img src = "https://i.ibb.co/djjc5wT/DSC00189.jpg" height = "250"><img src = "https://i.ibb.co/CtX9w6w/DSC00193.jpg" height = "250">
-<img src = "https://i.ibb.co/fqLK0Tt/DSC00187.jpg" height = "250">
+<img src = "https://i.ibb.co/thhCLyy/DSC00198.jpg" height = "230"><img src = "https://i.ibb.co/k5PJqWL/DSC00199.jpg" height = "230">
+<img src = "https://i.ibb.co/DMrDJsv/DSC00200.jpg" height = "230"><img src = "https://i.ibb.co/rZKGrnr/DSC00201.jpg" height = "230">
+<img src = "https://i.ibb.co/phHVBdM/DSC00202.jpg" height = "230"><img src = "https://i.ibb.co/Pj7pDg9/DSC00192.jpg" height = "230">
+<img src = "https://i.ibb.co/djjc5wT/DSC00189.jpg" height = "230"><img src = "https://i.ibb.co/CtX9w6w/DSC00193.jpg" height = "230">
+<img src = "https://i.ibb.co/fqLK0Tt/DSC00187.jpg" height = "230">
 
 Azure Sphere:
 
