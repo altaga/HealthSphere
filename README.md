@@ -156,19 +156,19 @@ Before starting, the EKG is composed of the following graph and we will call thi
 
 <img src = "https://i.ibb.co/QKVHfw3/image.png" width = "500">
 
-La frecuencia cardiaca, se obtiene primordialmente de obtener la distancia entre los picos de la grafica, a esto se le llama segmento RR.
+The heart rate is mainly obtained by obtaining the distance between the peaks of the graph, this is called the RR segment.
 
 <img src = "https://ccenf.pt/portals/0/Images/ecgs/ekg.png" width = "800">
 
-En este caso la frecuencia la obtendremos mediante un algoritmo implementado en arduino.
+In this case the frequency will be obtained through an algorithm implemented in arduino.
 
-- Primero obtenemos los rangos en los cuales esta trabajando nuestro modulo AD8232.
+- First we get the ranges in which our AD8232 module is working.
 
 <img src = "https://i.ibb.co/4Nw8nbd/image.png" width = "800">
 
-Podemos observar que la onda aproximadamente va desde los 420 a los 680 en la lectura del ADC, asi que con esto en mente propondremos el siguiente algoritmo para detectar la frecuencia.
+We can observe that the wave approximately goes from 420 to 680 in the ADC reading, we will propose the following algorithm to detect the frequency.
 
-- Ya que lo que estamos buscando es la referencia de la onda R, podemos notar que 650 es un valor al que siempre va a llegar la onda R, por lo tanto detectar un valor mayor a 650 sera nuestra referencia para saber que hemos detectado la onda R.
+- Since what we are looking for the reference of the R segment, we can notice that 650 is a value that the R segment will always reach, therefore detecting a value greater than 650 will be the R segment.
 
         float frec = 0;                       // initialize frecuency variable.
         unsigned long time1;                  // initialize first R time segment Reference.
@@ -205,7 +205,7 @@ Podemos observar que la onda aproximadamente va desde los 420 a los 680 en la le
 <img src = "https://i.ibb.co/McNzxM7/image.png" height = "100">
 <img src = "https://i.ibb.co/fxxRkyN/image.png" height = "100">
 
-- Aqui una muestra que el algoritmo puede detectar la frecuencia correcta, en la derecha estan los valores obtenidos por el Arduino y en la izquierda un una pulsera Mi Band 3 de Xiaomi.
+- Here a sample that the algorithm can detect the correct frequency, on the right are the values obtained by the Arduino and on the left a Xiaomi Mi Band 3.
 
 <img src = "https://i.ibb.co/w7HpBFJ/fdtjdtu.png" width = "581"><img src = "https://i.ibb.co/QkgfGPm/20191121-134314.jpg" width = "277">
 
@@ -233,11 +233,11 @@ Baud Rates(1:1200, 2:2400, 3:4800, 4:9600, 5:19200, 6:38400, 7:57600, 8:115200, 
 
 Connect your BT module with the USB - Serial TTL. (Serial configuration 38400 baudrate, Both NL & CR)
 
-El modulo tiene un boton, este hay que dejalo presionado al momento de conectarlo para que se habilite la funcion de configurarlo con los comandos AT, asi que recomiendo que le coloques un clip para hacerlo mas sencillo.
-
-Dejar conectado el HC06 al momento de configurar el HC05 ya que necesitamos parear los dos dositivos
+The module has a button, this must be pressed when connecting to enable the function to configure it with the AT commands, so I recommend that you put a clip to make it easier.
 
 <img src = "https://i.ibb.co/6cMSjxf/20191121-151908.jpg" width = "800">
+
+Leave the HC06 connected when configuring the HC05 since we need to pair the two devices
 
         Send: AT
         Response: OK
