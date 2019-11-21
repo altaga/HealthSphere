@@ -158,15 +158,46 @@ En este caso la frecuencia la obtendremos mediante un algoritmo implementado en 
 
 Podemos observar que la onda aproximadamente va desde los 420 a los 680 en la lectura del ADC, asi que con esto en mente propondremos el siguiente algoritmo para detectar la frecuencia.
 
+- Ya que lo que estamos buscando es la referencia de la onda R, podemos notar que 650 es un valor al que siempre va a llegar la onda R, por lo tanto detectar un valor mayor a 650 sera nuestra referencia para saber que hemos detectado la onda R.
+
+        float frec = 0;                       // initialize frecuency variable.
+        unsigned long time1;                  // initialize first R time segment Reference.
+        unsigned long time2;                  // initialize second R time segment Reference.
+        int i=0;                              // initialize counter var.
+        void setup() 
+        {
+          Serial1.begin(115200);              // Start Serial1.
+          time1=millis();                     // First time reference.
+        }
+
+        void loop() 
+        {
+          int lec = analogRead(A6);           // Taking the ADC value.
+          if(lec > 650)                       // Set the 650 R value reference.
+          {
+            time2=millis();                   // Taking the second time reference.
+            frec+=((60*1000)/(time2-time1));  // Get heart rate in beats per minute.
+            time1=millis();                   // Taking the first time reference for the next segment. 
+            i++;                              // Add 1 to counter.
+            if(i>10)
+            {
+              frec/=11;                       // Getting the average of 11 frequency samples.
+              Serial1.println((int)frec);     // Send the average to Azure Sphere (BT Serial Communication)
+              i=0;                            // Restart counter
+              frec = 0;                       // Restart frecuency value
+            }
+            delay(100);                       // Wait for the R wave to end, to prevent the algorithm from detecting the same R wave, the entire QRS segment lasts between 60 and 100 milliseconds, a delay of 100 milliseconds will work perfectly.
+          }
+        }
+        
+- This is the formula to obtain the heart rate, general and used for our arduino, the arduino is designed to adapt to the Arudino counts in milliseconds.
+
 <img src = "https://i.ibb.co/McNzxM7/image.png" height = "100">
 <img src = "https://i.ibb.co/fxxRkyN/image.png" height = "100">
 
-Ya que lo que estamos buscando es la referencia de la onda R, podemos notar que 650 es un valor al que siempre va a llegar la onda R, por lo tanto detectar un valor mayor a 650 sera nuestra referencia para saber que hemos detectado la onda R.
+- Aqui una muestra que el algoritmo puede detectar la frecuencia correcta, en la derecha estan los valores obtenidos por el Arduino y en la izquierda un una pulsera Mi Band de Xiaomi.
 
-
-
-
-
+<img src = "https://i.ibb.co/w7HpBFJ/fdtjdtu.png" width = "400"><img src = "https://i.ibb.co/QkgfGPm/20191121-134314.jpg" width = "400">
 
 ## Azure CLI Setup:
 
