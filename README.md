@@ -197,7 +197,7 @@ Podemos observar que la onda aproximadamente va desde los 420 a los 680 en la le
 
 - Aqui una muestra que el algoritmo puede detectar la frecuencia correcta, en la derecha estan los valores obtenidos por el Arduino y en la izquierda un una pulsera Mi Band de Xiaomi.
 
-<img src = "https://i.ibb.co/w7HpBFJ/fdtjdtu.png" width = "580"><img src = "https://i.ibb.co/QkgfGPm/20191121-134314.jpg" width = "278">
+<img src = "https://i.ibb.co/w7HpBFJ/fdtjdtu.png" width = "580"><img src = "https://i.ibb.co/QkgfGPm/20191121-134314.jpg" width = "277">
 
 ## Azure CLI Setup:
 
