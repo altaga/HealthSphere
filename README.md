@@ -73,7 +73,7 @@ Software:
 
 This is the connection diagram of the system, Arduino and Sphere.
 
-<img src="https://i.ibb.co/D43QqSw/Sphere-Circuit-bb.png" height = "300"><img src="https://i.ibb.co/RCk7TDh/EKGcircuit.png" height ="300">
+<img src="https://i.ibb.co/D43QqSw/Sphere-Circuit-bb.png" height = "360"><img src="https://i.ibb.co/RCk7TDh/EKGcircuit.png" height ="360">
 
 Services Connection Diagram:
 
