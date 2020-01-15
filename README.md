@@ -2,6 +2,8 @@
 
 Holter monitor with heart rate analysis, Azure cloud based and dashboard.
 
+For the complete and updated writeup of the project go to: https://www.hackster.io/308917/healthsphere-4e0430
+
 <img src="https://i.ibb.co/6yJQnM4/4-heartdisease.png" width="800">
 
 Always use technology to improve the world, if you are a black hat or gray hat hacker please abstain at this point ......... or at least leave your star to make me feel less guilty XP.
